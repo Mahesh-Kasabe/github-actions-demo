@@ -1,0 +1,7 @@
+school:
+- name: DPS
+  principle: someone
+  students: 
+  - rno: 12
+    name: mahesh
+    marks: 12

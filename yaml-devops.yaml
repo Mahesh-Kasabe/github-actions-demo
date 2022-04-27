@@ -1,0 +1,97 @@
+#key-value pairs 
+
+1 : "This is my roll num"
+
+---
+
+#lists
+-- apple
+-- mango
+
+--- # Diff betn Yaml blocks
+
+cities:
+ -- new delhi
+ -- mumbai 
+ -- gujrat
+
+---
+
+#Storing in one block
+
+cities: [new delhi, mumbai]
+
+---
+
+... #End of File
+
+
+#DataTypes 
+
+#string
+
+myself: "Mahesh Kasbe"
+
+#writing multiple lines in one line
+
+message : > 
+this all
+will
+be in a 
+single line
+
+#same as 
+
+message: this all will be in a single line
+
+#num
+
+number: 546
+float: 89.12
+booleanValue: Yes
+
+#Specify the value
+
+zero: !!int 0
+
+negativenum: !!int -35
+
+#null
+
+name: !!null null
+
+#date&time
+
+date: !!timestamp 2002-12-02
+time: !!time 2002-12-02T02:33:12 +5:30
+
+student: !!seq
+  -- marks
+  -- name
+  -- rool_no
+
+cities: [delhi, mumbai]
+
+#nested-maps
+
+name: Mahesh Kasbe
+role: 
+  age: 12
+  job: student
+
+#same as 
+
+name: Mahesh Kasbe
+role: {age: 12, job: student}
+
+#pairs: keys may have duplicate values
+
+example: !!pairs 
+  -- job: student
+  -- job: teacher
+
+#same as 
+
+example: [job:stuent, job: teacher]
+
+
